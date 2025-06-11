@@ -1,0 +1,12 @@
+[package]
+name = "gkv-report"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Benedikt Claus"]
+license = "MIT"
+description = "Report templates for German psychotherapy application (GKV)"
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
