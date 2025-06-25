@@ -37,7 +37,7 @@
     block(counter(heading).display() + h(2mm) + it.body)
   }
   show heading.where(level: 2): it => {
-    set text(size: 11pt, style: "italic", weight: "regular")
+    set text(size: 10pt, style: "italic", weight: "regular")
     block(it.body)
   }
   let datumfinal = if datum == none {
