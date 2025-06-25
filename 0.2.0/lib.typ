@@ -27,7 +27,7 @@
   body,
 ) = {
   // General setup
-  set text(lang: "de", font: "STIX Two Text", number-type: "lining")
+  set text(lang: "de", font: "STIX Two Text", number-type: "lining", size: 10pt)
   show math.equation: set text(font: "STIX Two Math")
   set par(justify: true)
   set list(marker: [-])
