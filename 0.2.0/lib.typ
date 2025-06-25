@@ -33,7 +33,7 @@
   set list(marker: [-])
   set heading(numbering: "1.1")
   show heading.where(level: 1): it => {
-    set text(size: 11pt)
+    set text(size: 11pt, font: "Fira Sans", weight: "semibold")
     block(counter(heading).display() + h(2mm) + it.body)
   }
   show heading.where(level: 2): it => {
@@ -49,7 +49,7 @@
   // Chiffre auf der ersten Seite in der Kopfzeile, Seitennummern und Ränder
   set page(
     header: context if counter(page).get().at(0) == 1 {
-      set text(size: 12pt, weight: "bold")
+      set text(size: 11pt, font: "Fira Sans", weight: "semibold")
       chiffre
     },
     margin: (left: 10mm, right: 10mm, top: 15mm, bottom: 15mm),
@@ -63,7 +63,7 @@
 
   // Literaturverzeichnis
   show heading: it => if it.body.text == "Literatur" {
-    block(text(it.body, size: 12pt))
+    block(text(it.body, size: 11pt, font: "Fira Sans", weight: "semibold"))
   }
   show bibliography: set block(spacing: 0.7em)
   bibliography("refs.bib", style: "apa", title: "Literatur")
