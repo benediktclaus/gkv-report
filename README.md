@@ -1,10 +1,8 @@
-# Typst Template for German GKV Psychotherapy Reports
+# typst Template for German GKV Psychotherapy Reports
 
-![GitHub License](https://img.shields.io/github/license/benediktclaus/gkv-report)
-![GitHub Release](https://img.shields.io/github/v/release/benediktclaus/gkv-report)
-![GitHub last commit](https://img.shields.io/github/last-commit/benediktclaus/gkv-report)
-
-
+[![GitHub License](https://img.shields.io/github/license/benediktclaus/gkv-report)](LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/benediktclaus/gkv-report)](https://github.com/benediktclaus/gkv-report/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/benediktclaus/gkv-report)](https://github.com/benediktclaus/gkv-report/commits/main)
 
 A `typst` template for creating reports for the official reviewer process of German public health insurance providers (GKV). This template automates the layout and formatting, allowing psychotherapists to focus on the content.
 
@@ -36,16 +34,16 @@ This template is designed to use specific fonts for optimal appearance. Please d
 
 ### Step 2: Install `psymbols` Package
 
-This template requires the `psymbols` package for microanalysis symbols. Install it first by following its [local installation guide](https://github.com/benediktclaus/psymbols#installation-local-setup).
+This template requires the `psymbols` package for microanalysis symbols. Install it first by following its [local installation guide](https://github.com/benediktclaus/psymbols#installation).
 
 ### Step 3: Install This Template
 
-1.  **Download the Repository:** Clone or download this repository as a ZIP file and extract it.
+1.  **Download the Latest Release:** Go to the [Releases page](https://github.com/benediktclaus/gkv-report/releases) and download the source code ZIP file of the latest version.
 2.  **Find Your Local typst Package Directory:** You need to find the standard package directory for your operating system.
     * **Windows:** `%APPDATA%\typst\packages\` (e.g., `C:\Users\<YourName>\AppData\Roaming\typst\packages`)
     * **macOS:** `~/Library/Application Support/typst/packages/`
     * **Linux:** `~/.local/share/typst/packages/`
-3.  **Move the Package Files:** Create the following folder structure inside your `packages` directory and move the downloaded files into it.
+3.  **Move the Package Files:** Extract the downloaded ZIP file. Create the following folder structure inside your `packages` directory and move the extracted contents into it.
     `.../packages/local/gkv-report/0.3.0/`
     Inside this `0.3.0` folder, you should place the `typst.toml`, `lib.typ`, and other necessary files.
 
@@ -80,6 +78,10 @@ The `kvbericht.with()` function accepts the following parameters:
 | :-------- | :------ | :------------------------------------------------------- |
 | `chiffre` | Content | The anonymization code (Chiffre) required for the report. |
 | `datum`   | Content | The date the report is being written.                    |
+
+## Contributing & Feedback
+
+This package is designed for practical use. If you have suggestions for improvements or encounter any issues, please feel free to [open an issue](https://github.com/benediktclaus/gkv-report/issues).
 
 ## License
 
