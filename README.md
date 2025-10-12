@@ -1,6 +1,10 @@
 # Typst Template for German GKV Psychotherapy Reports
 
-[![License: MIT](https://img.shields.io/github/license/benediktclaus/gkv-report)](LICENSE)
+![GitHub License](https://img.shields.io/github/license/benediktclaus/gkv-report)
+![GitHub Release](https://img.shields.io/github/v/release/benediktclaus/gkv-report)
+![GitHub last commit](https://img.shields.io/github/last-commit/benediktclaus/gkv-report)
+
+
 
 A `typst` template for creating reports for the official reviewer process of German public health insurance providers (GKV). This template automates the layout and formatting, allowing psychotherapists to focus on the content.
 
