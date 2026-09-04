@@ -5,8 +5,8 @@
   body,
 ) = {
   // General setup
-  set text(lang: "de", font: "STIX Two Text", number-type: "lining", size: 11pt)
-  show math.equation: set text(font: "STIX Two Math")
+  set text(lang: "de", font: "Quadraat Pro", number-type: "lining", size: 11.5pt)
+  show math.equation: set text(font: "Quadraat Pro")
   set par(justify: true)
   set list(marker: [-])
   set heading(numbering: "1.1")
@@ -15,7 +15,7 @@
     block(counter(heading).display() + h(2mm) + it.body)
   }
   show heading.where(level: 2): it => {
-    set text(size: 11pt, style: "italic", weight: "regular")
+    set text(size: 11.5pt, style: "italic", weight: "regular")
     block(it.body)
   }
   let datumfinal = if datum == none {
@@ -31,7 +31,10 @@
       chiffre
     },
     margin: (left: 10mm, right: 10mm, top: 15mm, bottom: 15mm),
-    numbering: "1/1",
+    footer: {
+      set text(number-type: "old-style")
+      context align(center, counter(page).display("1/1", both: true))
+    }
   )
 
 
@@ -58,7 +61,7 @@
     line(length: 100%, stroke: (thickness: 0.8pt)),
     box(width: 100%, height: 7em, stroke: (bottom: 0.8pt, right: 0.8pt)),
 
-    [Ort, Datum], [Dr. Benedikt Claus], [Stempel],
+    [Ort, Datum], [Dr. Benedikt Schäfer], [Stempel],
     [], [#text(size: 0.8em)[Psychologischer Psychotherapeut (VT)]],
   )
 }
